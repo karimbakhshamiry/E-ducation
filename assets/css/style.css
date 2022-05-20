@@ -16,7 +16,8 @@
     --container-width-md: 90%;
     --container-width-sm: 94%;
 
-    --trasition: all 400ms ease
+    --trasition: all 400ms ease;
+    --shadow: 0 3rem 3rem rgba(0, 0, 0, .5);
 }
 
 
@@ -75,6 +76,7 @@ h4 {
 
 a {
     color: var(--color-white);
+    text-transform: capitalize;
 }
 
 img {
@@ -107,7 +109,7 @@ img {
 /* NAVIGATION */
 
 .nav {
-    height: 10vh;
+    height: 7vh;
     width: 100vw;
     position: fixed;
     top: 0; right: 0; left: 0;
@@ -120,6 +122,11 @@ img {
     justify-content: space-between;
     align-items: baseline;
     height: 100%;
+}
+
+.window-scroll {
+    background-color: var(--color-bg2);
+    box-shadow: var(--shadow);
 }
 
 .open-menu {
@@ -152,7 +159,6 @@ img {
     height: 70vh;
     background-color: gray;
     overflow: hidden;
-    margin-bottom: 5em;
 }
 
 .header__container {
@@ -165,3 +171,80 @@ img {
 .header__left p {
     margin: 1em 0 2.4em;
 }
+
+/* CATEGORIES */
+.categories {
+    background-color: var(--color-bg1);
+    height: 17rem;
+    margin-top: 2em;
+
+}
+
+.categories__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.categories__left {
+    margin-right: 4em;
+}
+
+.categories__left h1 {
+    line-height: 1;
+}
+
+.categories__left p {
+    margin: 1em 0 3em;
+}
+
+.categories__right .learning-categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+.learning-categories__items {
+    background-color: var(--color-bg2);
+    padding: 1.5em;
+    border-radius: 1rem;
+}
+
+.learning-categories__items:hover {
+    box-shadow: var(--shadow);
+}
+
+.learning-categories__items .learning-categories__icon {
+    background-color: var(--color-bg1);
+    padding: 1em;
+    border-radius: .5rem;
+}
+
+.learning-categories__items:nth-child(2) .learning-categories__icon {
+    background-color: var(--color-danger);
+}
+
+.learning-categories__items:nth-child(3) .learning-categories__icon {
+    background-color: var(--color-success);
+}
+
+.learning-categories__items:nth-child(4) .learning-categories__icon {
+    background-color: var(--color-warning);
+}
+
+.learning-categories__items:nth-child(5) .learning-categories__icon {
+    background-color: var(--color-success);
+}
+
+.learning-categories__items:nth-child(6) .learning-categories__icon {
+    background-color: var(--color-primary);
+}
+
+.learning-categories__items h5 {
+    margin: 1em 0;
+    font-size: 1rem;
+}
+
+.learning-categories__items p {
+    font-size: .8rem;
+}
+
