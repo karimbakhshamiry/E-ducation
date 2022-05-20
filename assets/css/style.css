@@ -1,0 +1,145 @@
+/* CSS VARIABLES FOR THE PAGE */
+:root {
+    --color-primary: #6c63ff;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-variant: rgba(247, 88, 66, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.7);
+    --color-black: #000;
+    --color-bg: #1f2641;
+    --color-bg1: #2e3267;
+    --color-bg2: #424890;
+
+    --container-width-lg: 76%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --trasition: all 400ms ease
+}
+
+
+/* GENERAL STYLE */
+html,
+body,
+* {
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all 250ms;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-white);
+    background-color: var(--color-bg);
+    line-height: 1.7;
+}
+
+
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+section {
+    padding: 6em 0;
+}
+
+section h2 {
+    margin-bottom: 4em;
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+a {
+    color: var(--color-white);
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: 1em 2em;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--trasition);
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.btn-primary {
+    background-color: var(--color-danger);
+    color: var(--color-white);
+}
+
+/* NAVIGATION */
+
+.nav {
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    z-index: 1000;
+    padding-top: 1em;
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 100%;
+}
+
+.open-menu {
+    display: none;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    gap: 4rem ;
+}
+
+.nav-items a {
+    font-size: .9rem;
+    transition: var(--trasition);
+}
+
+.nav-items a:hover {
+    color: var(--color-primary);
+}
+
