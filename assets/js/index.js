@@ -48,3 +48,26 @@ function toggleShowFaqAnswer(crossmark) {
         crossmark.classList.add('fa-plus')
     }
 }
+
+// CODE FOR SWIPER
+
+const testimonialsSwiper = new Swiper('.testimonials-slider', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+    },
+    breakpoints: {
+        600: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        }
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    }
+
+})
