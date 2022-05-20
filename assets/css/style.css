@@ -110,7 +110,7 @@ img {
 /* NAVIGATION */
 
 .nav {
-    height: 7vh;
+    height: 10vh;
     width: 100vw;
     position: fixed;
     top: 0; right: 0; left: 0;
@@ -121,8 +121,8 @@ img {
 .nav__container {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    height: 100%;
+    align-items: center;
+    height: 70%;
 }
 
 .window-scroll {
@@ -171,13 +171,14 @@ img {
 
 .header__left p {
     margin: 1em 0 2.4em;
+    width: 80%;
 }
 
 /* CATEGORIES */
 .categories {
     background-color: var(--color-bg1);
-    height: 17rem;
-    margin-top: 2em;
+    height: 30rem;
+    margin-bottom: 4.5em;
 
 }
 
@@ -256,7 +257,7 @@ img {
 }
 
 .courses h1 {
-    margin: 1em;
+    margin: 2em;
     margin-bottom: 2em;
 }
 
@@ -299,7 +300,8 @@ img {
 
 .faqs h1 {
     text-align: center;
-    margin-bottom: 3em;
+    margin-bottom: 1.5em;
+    margin-top: 0;
 }
 
 .faqs__container {

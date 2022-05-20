@@ -1,7 +1,7 @@
 const navBar = document.querySelector('.nav')
 
 window.addEventListener('scroll', () => {
-    navBar.classList.toggle('window-scroll', scrollY > 100)
+    navBar.classList.toggle('window-scroll', scrollY > 10)
 })
 
 document.querySelectorAll('.expand-question').forEach(element => {
