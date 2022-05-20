@@ -248,3 +248,44 @@ img {
     font-size: .8rem;
 }
 
+/* COURSES */
+.courses {
+    text-align: center;
+    margin-top: 5em;
+}
+
+.courses__container h1 {
+    margin: 1em;
+    margin-bottom: 2em;
+}
+
+.courses__container .courses-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+.course {
+    background-color: var(--color-bg1);
+    border: 1px solid transparent;
+    transition: var(--trasition);
+}
+
+.course:hover {
+    border-color: var(--color-primary);
+    background-color: transparent;
+    box-shadow: var(--shadow);
+}
+.course .course-title {
+    margin: 1em;
+}
+
+.course .course-description {
+    font-size: .9rem;
+    padding: 0 1.5em;
+    margin-bottom: 2em;
+}
+
+.course a {
+    margin-bottom: 1.5em;
+}
