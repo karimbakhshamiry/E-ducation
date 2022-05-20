@@ -30,6 +30,7 @@ body,
     /* text-transform: capitalize; */
     text-decoration: none;
     transition: all 250ms;
+    box-sizing: border-box;
 }
 
 body {
@@ -254,7 +255,7 @@ img {
     margin-top: 5em;
 }
 
-.courses__container h1 {
+.courses h1 {
     margin: 1em;
     margin-bottom: 2em;
 }
@@ -289,3 +290,70 @@ img {
 .course a {
     margin-bottom: 1.5em;
 }
+
+/* FAQS */
+
+.faqs {
+    background-color: var(--color-bg1);
+}
+
+.faqs h1 {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.faqs__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.faqs-inner-container {
+    padding: 1.5em;
+    display: flex;
+    align-items: flex-start;
+    height: fit-content;
+    gap: 1em;
+    background-color: var(--color-primary);
+}
+
+.question {
+    font-size: 1rem;
+}
+
+.answer {
+    display: none;
+    margin-top: 1.5em;
+    font-size: .8rem;
+}
+
+@keyframes show-answer {
+    0% {
+        opacity: .1;
+    }
+
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.show-answer {
+    display: block;
+    animation-name: show-answer;
+    animation-duration: 2s;
+}
+
+.expand-question {
+    background-color: var(--color-bg2);
+    padding: .3em;
+    border-radius: 50%;
+    align-self: flex-start;
+}
+
+.expand-question:hover {
+    cursor: pointer;
+    background-color: var(--color-bg1);
+}
+
+
