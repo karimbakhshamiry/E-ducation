@@ -124,6 +124,8 @@ img {
     justify-content: space-between;
     align-items: center;
     height: 70%;
+    font-weight: bold;
+    letter-spacing: 1.5px;
 }
 
 .window-scroll {
@@ -405,4 +407,62 @@ img {
     z-index: -15;
     top: -1.5rem;
     transform: rotate(45deg);
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--color-bg1);
+    padding: 3em 0;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 2em;
+    align-items: start;
+}
+
+.footer__container .about .logo {
+    margin-bottom: 1em;
+}
+
+.footer__container .about .slogan,
+.permalinks a,
+.privacy a,
+.contacts a {
+    font-size: .9rem;
+    line-height: 2;
+    /* background-color: black; */
+}
+
+.permalinks,
+.privacy,
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.permalinks h4,
+.privacy h4,
+.contacts h4 {
+    margin-bottom: 1em;
+}
+
+.permalinks a:hover,
+.privacy a:hover,
+.contacts a:hover {
+    color: var(--color-primary);
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.social-media a {
+    font-size: 1.5rem;
 }
