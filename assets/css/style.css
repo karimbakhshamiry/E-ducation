@@ -436,7 +436,7 @@ img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     gap: 2em;
-    align-items: start;
+    align-items: baseline;
 }
 
 .footer__container .about .logo {
@@ -509,6 +509,9 @@ img {
 
     /* NAV BAR */
 
+    section {
+        padding: 4em 0;
+    }
     .open-menu,
     .close-menu {
         display: block;
@@ -574,4 +577,88 @@ img {
         color: white;
     }
 
+    /* HEADER SECTION */
+    .header {
+        height: 60vh;
+    }
+
+    /* CATERGORIES SECTION */
+
+    .categories {
+        margin-top: 3em;
+        margin-bottom: 0;
+        padding-bottom: 5em;
+        height: auto;
+    }
+
+    .categories__container {
+        grid-template-columns: 1fr;
+        gap: 3em;
+    }
+
+    .categories__left {
+        margin-right: 4em;
+    }
+
+    .categories__left h1 {
+        padding: 0 0 .3em;
+    }
+
+    /* COURSES */
+
+    .courses {
+        margin-top: 0;
+    }
+
+    .courses h1 {
+        margin: 0;
+        padding-bottom: 1.5em;
+    }
+
+    .course .course-description {
+        font-size: .85rem;
+    }
+
+    .course a {
+        font-size: .8rem;
+    }
+
+    /* FAQS */
+    .faqs {
+        padding-top: 4em;
+    }
+    .faqs h1 {
+        margin-bottom: 1.5em;
+    }
+
+    .faqs__container {
+        gap: .5em;
+    }
+
+    /* TESTIMONIALS */
+
+    .avatar {
+        height: 5rem;
+        width: 5rem;
+        border-width: .5rem;
+    }
+
+    .avatar-name {
+        font-size: 1rem;
+    }
+
+    .avatar-role {
+        font-size: .8rem;
+    }
+
+    .testimonial-details {
+        font-size: .85rem;
+        padding: 1.5em;
+    }
+
+    /* FOOTER */
+    .footer__container {
+        gap: 1em;
+        row-gap: 2em;
+    }
 }
