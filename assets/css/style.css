@@ -668,3 +668,28 @@ img {
         font-size: 97%;
     }
 }
+
+@media (max-width:910px) {
+    /* HEADER */
+    .header {
+        height: unset;
+    }
+    .header__container {
+        height: unset;
+        margin: 3em auto;
+    }
+
+    /* COURSES */
+
+    .courses__container .courses-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 1em;
+        row-gap: 2em;
+    }
+
+    .course {
+        padding-bottom: 1em;
+    }
+
+}
