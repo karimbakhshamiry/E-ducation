@@ -133,10 +133,26 @@ img {
     box-shadow: var(--shadow);
 }
 
-.open-menu {
+.open-menu,
+.close-menu {
     display: none;
+    background-color: transparent;
+    color: var(--color-white);
+    font-size: 2.5rem;
+    padding: 0;
+    border: none;
 }
 
+
+.open-menu:hover {
+    color: var(--color-success);
+    cursor: pointer;
+}
+
+.close-menu:hover {
+    color: var(--color-danger);
+    cursor: pointer;
+}
 .nav-menu{
     display: flex;
     justify-content: space-between;
@@ -465,4 +481,97 @@ img {
 
 .social-media a {
     font-size: 1.5rem;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width:1024px) {
+
+    /* GENERAL STYLE */
+    .container {
+        width: var(--container-width-md);
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    /* NAV BAR */
+
+    .open-menu,
+    .close-menu {
+        display: block;
+    }
+    .nav-menu {
+        display: none;
+        position: fixed;
+        top: 12vh;
+        right: 4%;
+        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
+        align-items: stretch;
+        gap: 0;
+        background-color: transparent;
+        box-shadow: 0 0 10rem rgba(0, 0, 0, .5);
+        
+    }
+
+    .nav-menu.open {
+        display: flex;
+    }
+
+    .nav-items a {
+        display: block;
+        font-size: 1.2rem;
+        padding: 1em 5em;
+        transition: var(--trasition);
+    }
+    
+    .nav-items {
+        background-color: var(--color-primary);
+        transform-origin: top right;
+        animation: animateNav 200ms linear forwards;
+        opacity: 0;
+    }
+
+    .nav-items:nth-child(2) {
+        animation-delay: 100ms;
+    }
+
+    .nav-items:nth-child(3) {
+        animation-delay: 200ms;
+    }
+
+    .nav-items:nth-child(4) {
+        animation-delay: 300ms;
+    }
+
+    @keyframes animateNav {
+        0% {
+            transform: rotateZ(-90deg) rotateX(-90deg) scale(0.1);
+        }
+
+        100% {
+            transform: rotateZ(0) rotateX(0) scale(1);
+            opacity: 1;
+        }
+    }
+
+    .nav-items a:hover {
+        background-color: var(--color-bg);
+        color: white;
+    }
+
 }

@@ -1,4 +1,6 @@
 const navBar = document.querySelector('.nav')
+const openMenuBtn = document.querySelector('.open-menu')
+const navMenu = document.querySelector('.nav-menu')
 
 window.addEventListener('scroll', () => {
     navBar.classList.toggle('window-scroll', scrollY > 10)
@@ -49,6 +51,23 @@ function toggleShowFaqAnswer(crossmark) {
     }
 }
 
+
+// CODE FOR OPENING THE MENU
+openMenuBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('open')
+
+    if (openMenuBtn.classList.contains('open-menu')) {
+        openMenuBtn.classList.remove('open-menu')
+        openMenuBtn.classList.add('close-menu')
+
+        openMenuBtn.children[0].className = 'fa fa-times'
+    } else {
+        openMenuBtn.classList.add('open-menu')
+        openMenuBtn.classList.remove('close-menu')
+
+        openMenuBtn.children[0].className = 'fa fa-bars'
+    }
+})
 // CODE FOR SWIPER
 
 const testimonialsSwiper = new Swiper('.testimonials-slider', {
