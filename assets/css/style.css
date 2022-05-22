@@ -1,6 +1,7 @@
 /* CSS VARIABLES FOR THE PAGE */
 :root {
     --color-primary: #6c63ff;
+    --color-secondary:#F34F98;
     --color-success: #00bf8e;
     --color-warning: #f7c94b;
     --color-danger: #f75842;
@@ -38,6 +39,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--color-white);
     background-color: var(--color-bg);
+    background-image: url('../../img/bg-texture.png');
     line-height: 1.7;
 }
 
@@ -167,17 +169,16 @@ img {
 }
 
 .nav-items a:hover {
-    color: var(--color-primary);
+    color: var(--color-secondary);
 }
 
 
 /* HEADER */
 
 .header {
-    position: relative;
-    top: 10vh;
+    margin-top: 10vh;
+    margin-bottom: 2em;
     height: 70vh;
-    background-color: gray;
     overflow: hidden;
 }
 
@@ -252,7 +253,7 @@ img {
 }
 
 .learning-categories__items:nth-child(5) .learning-categories__icon {
-    background-color: var(--color-success);
+    background-color: var(--color-secondary);
 }
 
 .learning-categories__items:nth-child(6) .learning-categories__icon {
@@ -292,7 +293,7 @@ img {
 }
 
 .course:hover {
-    border-color: var(--color-primary);
+    border-color: var(--color-secondary);
     background-color: transparent;
     box-shadow: var(--shadow);
 }
@@ -390,7 +391,7 @@ img {
     border-radius: 50%;
     overflow: hidden;
     margin: 1em auto;
-    border: .7rem solid var(--color-bg2);
+    border: .5rem solid var(--color-success);
 }
 
 .avatar-info {
@@ -470,7 +471,7 @@ img {
 .permalinks a:hover,
 .privacy a:hover,
 .contacts a:hover {
-    color: var(--color-primary);
+    color: var(--color-secondary);
 }
 
 .social-media {
@@ -481,6 +482,11 @@ img {
 
 .social-media a {
     font-size: 1.5rem;
+}
+
+.footer__container > div > a:hover {
+    padding-left: .5em;
+    border-left: 5px solid var(--color-secondary);
 }
 
 /* MEDIA QUERIES */
@@ -707,10 +713,14 @@ img {
 
     /* FAQS */
     .faqs__container {
-        grid-template-columns: 35rem;
+        grid-template-columns: 1fr;
         row-gap: 1em;
         align-items: center;
         justify-content: center;
+    }
+
+    .faqs-inner-container {
+        margin: 0 1em;
     }
 
 
@@ -724,6 +734,10 @@ img {
     .header__container {
         grid-template-columns: 1fr;
         text-align: center;
+    }
+
+    .course {
+        margin: 0 1em;
     }
 }
 
