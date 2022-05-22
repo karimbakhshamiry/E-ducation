@@ -693,3 +693,25 @@ img {
     }
 
 }
+
+@media (max-width:750px) {
+
+    /* CATEGORIES SECTION */
+    .categories__right .learning-categories {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+
+    .learning-categories__items {
+        padding: 2em;
+    }
+
+    /* FAQS */
+    .faqs__container {
+        grid-template-columns: 35rem;
+        row-gap: 1em;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
