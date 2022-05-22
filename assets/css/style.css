@@ -726,3 +726,45 @@ img {
         text-align: center;
     }
 }
+
+@media (max-width:570px) {
+
+    /* CATEGORIES */
+    .categories__left {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 2em;
+    }
+
+    .categories__left a {
+        margin: 0 auto;
+    }
+
+    /* FAQS */
+    .faqs__container {
+        grid-template-columns: 1fr;
+    }
+
+    /* FOOTER */
+    .footer__container * {
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer__container {
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .footer__container > div::before {
+        content: '';
+        height: 2px;
+        width: 50%;
+        background-color: var(--color-primary);
+        margin-bottom: 1em;
+    }
+
+    .social-media {
+        margin-top: 1em;
+    }
+}
