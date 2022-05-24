@@ -476,6 +476,7 @@ img {
 .contacts a:hover {
     /* color: var(--color-secondary); */
     color: rgba(255, 255, 255, .7);
+    text-decoration: underline;
 }
 
 .social-media {
