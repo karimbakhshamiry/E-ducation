@@ -166,10 +166,13 @@ img {
 .nav-items a {
     font-size: .9rem;
     transition: var(--trasition);
+    border-bottom: 5px solid transparent;
 }
 
 .nav-items a:hover {
-    color: var(--color-secondary);
+    /* color: var(--color-secondary); */
+    color: rgba(255, 255, 255, .9);
+    border-bottom: 5px solid;
 }
 
 
@@ -471,7 +474,8 @@ img {
 .permalinks a:hover,
 .privacy a:hover,
 .contacts a:hover {
-    color: var(--color-secondary);
+    /* color: var(--color-secondary); */
+    color: rgba(255, 255, 255, .7);
 }
 
 .social-media {
@@ -484,10 +488,10 @@ img {
     font-size: 1.5rem;
 }
 
-.footer__container > div > a:hover {
+/* .footer__container > div > a:hover {
     padding-left: .5em;
     border-left: 5px solid var(--color-secondary);
-}
+} */
 
 /* MEDIA QUERIES */
 @media screen and (max-width:1024px) {
