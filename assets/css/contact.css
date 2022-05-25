@@ -129,6 +129,7 @@ textarea {
 .contact-us__container .form-container form textarea,
 .contact-us__container .form-container form input[name='email'] {
     width: 98%;
+    text-transform: none;
 }
 
 .contact-us__container .form-container form #send-message {
