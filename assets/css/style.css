@@ -241,6 +241,7 @@ img {
     background-color: var(--color-bg1);
     padding: 1em;
     border-radius: .5rem;
+    font-size: 1.2rem;
 }
 
 .learning-categories__items:nth-child(2) .learning-categories__icon {

@@ -60,7 +60,7 @@
                     </div>
 
                     <div class="learning-categories__items">
-                        <i class="learning-categories__icon fa fa-music"></i>
+                        <i class="learning-categories__icon fa fa-paint-brush"></i>
                         <h5>Graphic Design</h5>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, ipsam!</p>
                     </div>
@@ -72,7 +72,7 @@
                     </div>
 
                     <div class="learning-categories__items">
-                        <i class="learning-categories__icon fa fa-usd"></i>
+                        <i class="learning-categories__icon fa fa-bar-chart"></i>
                         <h5>Marketing</h5>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, ipsam!</p>
                     </div>
@@ -84,7 +84,7 @@
                     </div>
 
                     <div class="learning-categories__items">
-                        <i class="learning-categories__icon fa fa-usd"></i>
+                        <i class="learning-categories__icon fa fa-money"></i>
                         <h5>Business</h5>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, ipsam!</p>
                     </div>
@@ -95,7 +95,7 @@
     <!-- CATEGORIES SECTION ENDS HERE -->
 
     <!-- COURSES SECTION STARTS HERE -->
-    <section class="courses">
+    <section class="courses" id="courses">
         <h1>Popular Courses</h1>
         <div class="container courses__container">
             <div class="courses-container">
@@ -342,5 +342,29 @@
     <!-- FOOTER SECTION ENDS HERE -->
     <script src="assets/js/swiper.js"></script>
     <script src="assets/js/index.js"></script>
+    <script>
+        // CODE FOR SWIPER
+
+        const testimonialsSwiper = new Swiper('.testimonials-slider', {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+            breakpoints: {
+                600: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                }
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            }
+        
+        })
+    </script>
 </body>
 </html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📝 E-ducation Schooling</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/courses.css">
+</head>
+<body>
+    <!-- NAV BAR STARTS HERE -->
+    <nav class="nav">
+        <div class="container nav__container">
+            <h4><a href="#" class="logo">📝 E-ducations</a></h4>
+            <ul class="nav-menu">
+                <li class="nav-items"><a href="index.html">Home</a></li>
+                <li class="nav-items"><a href="about.html">About</a></li>
+                <li class="nav-items"><a href="courses.html">Courses</a></li>
+                <li class="nav-items"><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button class="btn open-menu"><i class="fa fa-bars"></i></button>
+            <!-- <button class="btn close_menu" id="close_menu"><i class="fa fa-times"></i></button> -->
+        </div>
+    </nav>
+    <!-- NAV BAR ENDS HERE -->
+    <section class="all-courses">
+        <div class="container all-courses__container">
+            <div class="top">
+                <div class="image-container">
+                    <img src="img/course1.jpg" alt="">
+                </div>
+                <div class="info">
+
+                    <span class="title">Course Title: Responsive Social Media Website UI Design</span>
+                    <span class="instructor">Instructor: John Doe</span>
+                    <span class="duration">Duration: 1 month(s)</span>
+                    <span class="start-date">Start Date: 
+                        <script>
+                            let startDate = Date().split(' ')
+                            document.write(`
+                            ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                            ${startDate[1]} 
+                            ${startDate[3]}
+                            `)
+                            </script>
+                    </span>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="image-container">
+                    <img src="img/course2.jpg" alt="">
+                </div>
+                <div class="info">
+
+                    <span class="title">Course Title: Responsive SmartHome Website Design</span>
+                    <span class="instructor">Instructor: John Doe</span>
+                    <span class="duration">Duration: 5 month(s)</span>
+                    <span class="start-date">Start Date: 
+                        <script>
+                            startDate = Date().split(' ')
+                            document.write(`
+                            ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                            ${startDate[1]} 
+                            ${startDate[3]}
+                            `)
+                            </script>
+                    </span>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="image-container">
+                    <img src="img/course3.jpg" alt="">
+                </div>
+                <div class="info">
+
+                    <span class="title">Course Title: Responsive Admin Dashboard UI Design</span>
+                    <span class="instructor">Instructor: John Doe</span>
+                    <span class="duration">Duration: 1 month(s)</span>
+                    <span class="start-date">Start Date: 
+                        <script>
+                            startDate = Date().split(' ')
+                            document.write(`
+                            ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                            ${startDate[1]} 
+                            ${startDate[3]}
+                            `)
+                            </script>
+                    </span>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                </div>
+            </div>
+            
+            <div>
+                <div class="image-container">
+                    <img src="img/course13.jpg" alt="">
+                </div>
+                <div class="info">
+
+                    <span class="title">Course Title: Responsive E-commmerce Website Design</span>
+                    <span class="instructor">Instructor: John Doe</span>
+                    <span class="duration">Duration: 1 month(s)</span>
+                    <span class="start-date">Start Date: 
+                        <script>
+                            startDate = Date().split(' ')
+                            document.write(`
+                            ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                            ${startDate[1]} 
+                            ${startDate[3]}
+                            `)
+                            </script>
+                    </span>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION STARTS HERE -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="about">
+                <h3 class="logo">📝 E-ducations</h3>
+                <div class="slogan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, nobis!</div>
+            </div>
+
+            <div class="permalinks">
+                <h4>Permalinks</h4>
+                <a class="permalink-item" href="#index.html">Home</a>
+                <a class="permalink-item" href="about.html">About</a>
+                <a class="permalink-item" href="courses.html">Courses</a>
+                <a class="permalink-item" href="contact.html">Contact</a>
+            </div>
+
+            <div class="privacy">
+                <h4>Privacy</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Refund Policy</a>
+            </div>
+
+            <div class="contacts">
+                <h4>Contact Us</h4>
+                <a href="callto:+93721721221" class="phone">072-172-1221</a>
+                <a href="mailto:cusomers@education.com" class="email">customer@education.com</a>
+                <div class="social-media">
+                    <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION ENDS HERE -->
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
