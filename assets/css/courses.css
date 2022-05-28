@@ -32,6 +32,7 @@ img {
 /* ALL COURSES SECTION */
 .all-courses {
     background-color: var(--color-bg);
+    background-image: url('../../img/bg-texture.png');
 }
 
 .all-courses h1 {
