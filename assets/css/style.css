@@ -103,6 +103,7 @@ img {
     background-color: transparent;
     color: var(--color-white);
     border-color: var(--color-white);
+    cursor: pointer;
 }
 
 .btn-primary {

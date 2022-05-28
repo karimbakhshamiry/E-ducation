@@ -27,98 +27,796 @@
     </nav>
     <!-- NAV BAR ENDS HERE -->
     <section class="all-courses">
+        <h1>All Courses</h1>
+        <div class="categories-container container">
+            <span class="blockchain">Blockchain</span>
+            <span class="finance">Finance</span>
+            <span class="marketing">Marketing</span>
+            <span class="music">Music</span>
+            <span class="business">Business</span>
+            <span class="design">Graphic Design</span>
+            <span class="web">Web Development</span>
+        </div>
+
+
         <div class="container all-courses__container">
-            <div class="top">
-                <div class="image-container">
-                    <img src="img/course1.jpg" alt="">
+            <div class="cat-item show" id="web">
+                <h2 class="featured-course">Featured Course</h2>
+                <div class="top">
+                    <div class="image-container" style="background-image: url('img/course1.jpg');">
+                        <img src="img/course1.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    let startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+                    </div>
                 </div>
-                <div class="info">
-
-                    <span class="title">Course Title: Responsive Social Media Website UI Design</span>
-                    <span class="instructor">Instructor: John Doe</span>
-                    <span class="duration">Duration: 1 month(s)</span>
-                    <span class="start-date">Start Date: 
-                        <script>
-                            let startDate = Date().split(' ')
-                            document.write(`
-                            ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
-                            ${startDate[1]} 
-                            ${startDate[3]}
-                            `)
-                            </script>
-                    </span>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+    
+                <h2 class="other-courses">Other Courses</h2>
+                <div>
+                    <div class="image-container" style="background-image: url('img/course2.jpg');">
+                        <img src="img/course2.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+    
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="image-container" style="background-image: url('img/course3.jpg');">
+                        <img src="img/course3.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+    
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="image-container" style="background-image: url('img/course13.jpg');">
+                        <img src="img/course13.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+    
+                    </div>
                 </div>
             </div>
 
-            <div>
-                <div class="image-container">
-                    <img src="img/course2.jpg" alt="">
+            <div class="cat-item" id="blockchain">
+                <h2 class="featured-course">Featured Course</h2>
+                <div class="top">
+                    <div class="image-container" style="background-image: url('img/course1.jpg');">
+                        <img src="img/course1.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+                    </div>
                 </div>
-                <div class="info">
-
-                    <span class="title">Course Title: Responsive SmartHome Website Design</span>
-                    <span class="instructor">Instructor: John Doe</span>
-                    <span class="duration">Duration: 5 month(s)</span>
-                    <span class="start-date">Start Date: 
-                        <script>
-                            startDate = Date().split(' ')
-                            document.write(`
-                            ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
-                            ${startDate[1]} 
-                            ${startDate[3]}
-                            `)
-                            </script>
-                    </span>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+    
+                <h2 class="other-courses">Other Courses</h2>
+                <div>
+                    <div class="image-container" style="background-image: url('img/course2.jpg');">
+                        <img src="img/course2.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+    
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="image-container" style="background-image: url('img/course3.jpg');">
+                        <img src="img/course3.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+    
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="image-container" style="background-image: url('img/course13.jpg');">
+                        <img src="img/course13.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+    
+                    </div>
                 </div>
             </div>
 
-            <div>
-                <div class="image-container">
-                    <img src="img/course3.jpg" alt="">
+            <div class="cat-item" id="finance">
+                <h2 class="featured-course">Featured Course</h2>
+                <div class="top">
+                    <div class="image-container" style="background-image: url('img/course1.jpg');">
+                        <img src="img/course1.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+                    </div>
                 </div>
-                <div class="info">
+    
+                <h2 class="other-courses">Other Courses</h2>
+                <div>
+                    <div class="image-container" style="background-image: url('img/course2.jpg');">
+                        <img src="img/course2.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+    
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="image-container" style="background-image: url('img/course3.jpg');">
+                        <img src="img/course3.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+    
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="image-container" style="background-image: url('img/course13.jpg');">
+                        <img src="img/course13.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+    
+                    </div>
+                </div>
+            </div>
 
-                    <span class="title">Course Title: Responsive Admin Dashboard UI Design</span>
-                    <span class="instructor">Instructor: John Doe</span>
-                    <span class="duration">Duration: 1 month(s)</span>
-                    <span class="start-date">Start Date: 
-                        <script>
-                            startDate = Date().split(' ')
-                            document.write(`
-                            ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
-                            ${startDate[1]} 
-                            ${startDate[3]}
-                            `)
-                            </script>
-                    </span>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+            <div class="cat-item" id="marketing">
+                <h2 class="featured-course">Featured Course</h2>
+                <div class="top">
+                    <div class="image-container" style="background-image: url('img/course1.jpg');">
+                        <img src="img/course1.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+                    </div>
+                </div>
+    
+                <h2 class="other-courses">Other Courses</h2>
+                <div>
+                    <div class="image-container" style="background-image: url('img/course2.jpg');">
+                        <img src="img/course2.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+    
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="image-container" style="background-image: url('img/course3.jpg');">
+                        <img src="img/course3.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+    
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="image-container" style="background-image: url('img/course13.jpg');">
+                        <img src="img/course13.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+    
+                    </div>
+                </div>
+            </div>
+
+            <div class="cat-item" id="music">
+                <h2 class="featured-course">Featured Course</h2>
+                <div class="top">
+                    <div class="image-container" style="background-image: url('img/course1.jpg');">
+                        <img src="img/course1.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+                    </div>
+                </div>
+    
+                <h2 class="other-courses">Other Courses</h2>
+                <div>
+                    <div class="image-container" style="background-image: url('img/course2.jpg');">
+                        <img src="img/course2.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+    
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="image-container" style="background-image: url('img/course3.jpg');">
+                        <img src="img/course3.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+    
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="image-container" style="background-image: url('img/course13.jpg');">
+                        <img src="img/course13.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+    
+                    </div>
+                </div>
+            </div>
+
+            <div class="cat-item" id="business">
+                <h2 class="featured-course">Featured Course</h2>
+                <div class="top">
+                    <div class="image-container" style="background-image: url('img/course1.jpg');">
+                        <img src="img/course1.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+                    </div>
+                </div>
+    
+                <h2 class="other-courses">Other Courses</h2>
+                <div>
+                    <div class="image-container" style="background-image: url('img/course2.jpg');">
+                        <img src="img/course2.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+    
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="image-container" style="background-image: url('img/course3.jpg');">
+                        <img src="img/course3.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+    
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="image-container" style="background-image: url('img/course13.jpg');">
+                        <img src="img/course13.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+    
+                    </div>
+                </div>
+            </div>
+
+            <div class="cat-item" id="design">
+                <h2 class="featured-course">Featured Course</h2>
+                <div class="top">
+                    <div class="image-container" style="background-image: url('img/course1.jpg');">
+                        <img src="img/course1.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+                    </div>
+                </div>
+    
+                <h2 class="other-courses">Other Courses</h2>
+                <div>
+                    <div class="image-container" style="background-image: url('img/course2.jpg');">
+                        <img src="img/course2.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+    
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="image-container" style="background-image: url('img/course3.jpg');">
+                        <img src="img/course3.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+    
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="image-container" style="background-image: url('img/course13.jpg');">
+                        <img src="img/course13.jpg" alt="">
+                    </div>
+                    <div class="info">
+    
+                        <span class="title">Course Title: <span class="accent-light">Responsive Social Media Website UI Design</span></span>
+                        <span class="instructor">Instructor: <span class="accent-light">John Doe</span></span>
+                        <span class="duration">Duration: <span class="accent-light">1 month(s)</span></span>
+                        <span class="start-date">Start Date:
+                            <span class="accent-light">
+                                <script>
+                                    startDate = Date().split(' ')
+                                    document.write(`
+                                    ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
+                                    ${startDate[1]} 
+                                    ${startDate[3]}
+                                    `)
+                                </script>
+                            </span>
+                        </span>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
+                        <button class="btn read-more" id="read-more">Read More</button>
+    
+                    </div>
                 </div>
             </div>
             
-            <div>
-                <div class="image-container">
-                    <img src="img/course13.jpg" alt="">
-                </div>
-                <div class="info">
-
-                    <span class="title">Course Title: Responsive E-commmerce Website Design</span>
-                    <span class="instructor">Instructor: John Doe</span>
-                    <span class="duration">Duration: 1 month(s)</span>
-                    <span class="start-date">Start Date: 
-                        <script>
-                            startDate = Date().split(' ')
-                            document.write(`
-                            ${(Number(startDate[2]) + 5) > 30 ? startDate[2] : Number(startDate[2]) + 5} 
-                            ${startDate[1]} 
-                            ${startDate[3]}
-                            `)
-                            </script>
-                    </span>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum corrupti! Quaerat culpa totam voluptate, eius nobis natus unde soluta sapiente iste perspiciatis libero dolores. Provident quis deserunt sunt libero?</p>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -159,7 +857,7 @@
         </div>
     </footer>
     <!-- FOOTER SECTION ENDS HERE -->
-    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/courses.js"></script>
     <script src="assets/js/index.js"></script>
 </body>
 </html>

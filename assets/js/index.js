@@ -68,3 +68,11 @@ openMenuBtn.addEventListener('click', () => {
         openMenuBtn.children[0].className = 'fa fa-bars'
     }
 })
+
+window.addEventListener('scroll', () => {
+    navMenu.classList.remove('open')
+
+    openMenuBtn.classList.add('open-menu')
+    openMenuBtn.classList.remove('close-menu')
+    openMenuBtn.children[0].className = 'fa fa-bars'
+})
