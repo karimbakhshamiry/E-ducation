@@ -1,0 +1,170 @@
+/* CSS VARIABLES FOR THE PAGE */
+:root {
+    --color-primary: #6c63ff;
+    --color-secondary:#F34F98;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-variant: rgba(247, 88, 66, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.7);
+    --color-black: #000;
+    --color-bg: #1f2641;
+    --color-bg1: #2e3267;
+    --color-bg2: #424890;
+
+    --container-width-lg: 76%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+    --section-title-fs: 3rem;
+
+    --trasition: all 400ms ease;
+    --shadow: 0 3rem 3rem rgba(0, 0, 0, .5);
+    --swiper-theme-color: #00bf8e;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+}
+
+.section-title {
+    margin: 0;
+    padding: 1em 0;
+    font-size: var(--section-title-fs);
+}
+
+section {
+    padding: 3em 0;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* GENERAL COURSE DETAILS SECTION */
+
+.course-details {
+    background-color: #2e3267;   
+    padding: 6em 0;
+}
+
+.course-details__container{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    column-gap: 2em;
+}
+
+.course-title {
+    text-align: left;
+    margin-bottom: .5em;
+}
+
+.course-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.course-info span {
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.course-info .accent-light {
+    font-weight: normal;
+}
+
+.course-info .description {
+    margin-top: 1em;
+}
+
+
+/* WHO THIS COURSE IS FOR SECTION */
+.who__container p {
+    text-align: center;
+}
+
+
+/* WHAT YOU WILL LEARN SECTION */
+.what {
+    background-color: var(--color-bg1);
+}
+
+.what__container ul {
+    font-size: 1rem;
+    margin-left: .7em;
+}
+
+.what__container ul li {
+    position: relative;
+    list-style-type: square;
+}
+
+.what__container ul li::before {
+    content: '';
+    position: absolute;
+    left: -.7rem;
+    top: 1rem;
+    height: 100%;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.what__container ul li:last-child::before {
+    content: '';
+    height: 0;
+    width: 0;
+}
+
+/* OUTLINE */
+
+.outline {
+    background-color: var(--color-bg);
+}
+
+.outline__container ul {
+    margin-left: .8rem;
+}
+
+.outline__container > ul {
+    list-style-type: square;
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: .8rem;
+}
+
+.outline__container ul li ul {
+    list-style-type: disc;
+    margin-left: 2em;
+}
+
+.outline__container ul li {
+    position: relative;
+}
+
+.outline__container ul li::before {
+    content: '';
+    position: absolute;
+    left: -.85rem;
+    top: 1rem;
+    height: 100%;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.outline__container ul li:last-child::before {
+    content: '';
+    height: 0;
+    width: 0;
+}
+
+.outline .container .btn{
+    margin-top: 5em;
+    /* padding: 3em 5em; */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
