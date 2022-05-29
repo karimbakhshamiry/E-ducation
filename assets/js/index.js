@@ -1,6 +1,9 @@
 const navBar = document.querySelector('.nav')
 const openMenuBtn = document.querySelector('.open-menu')
 const navMenu = document.querySelector('.nav-menu')
+const loginFormContainer = document.querySelector('.login-container')
+const userBtn = document.getElementById('user-btn')
+const closeLoginFormBtn = document.getElementById('close-login-form')
 
 window.addEventListener('scroll', () => {
     navBar.classList.toggle('window-scroll', scrollY > 10)
@@ -75,4 +78,14 @@ window.addEventListener('scroll', () => {
     openMenuBtn.classList.add('open-menu')
     openMenuBtn.classList.remove('close-menu')
     openMenuBtn.children[0].className = 'fa fa-bars'
+})
+
+userBtn.addEventListener('click', () => {
+    document.querySelector('.overlay').style.right = '0'
+    loginFormContainer.style.right = '0'
+})
+
+closeLoginFormBtn.addEventListener('click', () => {
+    document.querySelector('.overlay').style.right = '-150%'
+    loginFormContainer.style.right = '-150%'
 })
