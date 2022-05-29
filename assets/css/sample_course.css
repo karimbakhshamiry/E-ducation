@@ -143,12 +143,13 @@ p {
 
 .outline__container ul li {
     position: relative;
+    line-height: 2;
 }
 
 .outline__container ul li::before {
     content: '';
     position: absolute;
-    left: -.85rem;
+    left: -.7rem;
     top: 1rem;
     height: 100%;
     width: 1px;
@@ -161,10 +162,50 @@ p {
     width: 0;
 }
 
-.outline .container .btn{
+.btn__container .btn{
     margin-top: 5em;
-    /* padding: 3em 5em; */
     font-weight: bold;
     font-size: 1.5rem;
 }
 
+@media (max-width:1024px) {
+    :root {
+        --section-title-fs: 2.5rem;      
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .course-details__container {
+        grid-template-columns: 1fr;
+        /* font-size: var(--section-title-fs); */
+    }
+
+    .btn__container .btn {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:660px) {
+
+    .container {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    
+    .outline__container ul {
+        grid-template-columns: 1fr;
+        margin: 0 2em;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+
+    .outline .btn__container .enroll {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+}
