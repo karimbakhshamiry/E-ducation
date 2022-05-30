@@ -41,6 +41,11 @@ img {
     background-color: var(--color-bg2);
 }
 
+.all-courses .categories-container span.selected {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
 .all-courses__container {
     display: flex;
     flex-direction: column;
@@ -123,7 +128,7 @@ img {
     background-color: transparent;
 }
 
-.all-courses__container > div  > div.image-container {
+.all-courses__container > div  > div .image-container {
     background-color: gray;
     background-blend-mode: luminosity;
     background-repeat: no-repeat;
@@ -135,7 +140,7 @@ img {
 .all-courses__container > div  > div .image-container img {
     width: 100%;
     object-fit: cover;
-    object-position: right;
+    object-position: left;
     box-shadow: 0 1em 3rem rgba(0, 0, 0, .5);
 }
 
@@ -258,6 +263,10 @@ img {
 @media (max-width:860px) {
     .all-courses__container > .cat-item > div {
         flex-direction: column;
+    }
+
+    .all-courses__container > div  > div .image-container {
+        width: 100%;
     }
 }
 

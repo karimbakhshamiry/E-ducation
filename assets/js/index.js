@@ -1,33 +1,50 @@
 const navBar = document.querySelector('.nav')
 const openMenuBtn = document.querySelector('.open-menu')
 const navMenu = document.querySelector('.nav-menu')
+const navLinks = document.querySelectorAll('.nav-items')
 const loginFormContainer = document.querySelector('.login-container')
 const userBtn = document.getElementById('user-btn')
 const closeLoginFormBtn = document.getElementById('close-login-form')
 const toggleDarkLightBtn = document.querySelector('.darklight')
-const dark = toggleDarkLightBtn.classList.contains('fa-sun-o') ? 0 : 1
+const mainStyleTag = document.querySelector('.main-style')
+let darkMode
 
-if (dark) {
-    document.querySelector('.main-style').href = 'assets/css/style_dark.css'
+
+// getting the hang of dark mode
+
+    // getting darkMode value from localStorage
+if (localStorage.getItem('darkMode')) {
+    darkMode = JSON.parse(localStorage.getItem('darkMode'))
+} else {
+    darkMode = 1
+    localStorage.setItem('darkMode', JSON.stringify(darkMode))
 }
 
+    // synchronizing darkMode localStorage value with the current state of web page
+if (darkMode === 0) {
+    mainStyleTag.href = 'assets/css/light_mode_style.css'
+    toggleDarkLightBtn.className = 'fa fa-moon-o darklight'
+} else {
+    mainStyleTag.href = 'assets/css/dark_mode_style.css'
+}
+
+    // adding the event to the darklight button (toggling dark mode)
 toggleDarkLightBtn.addEventListener('click', () => {
     if (toggleDarkLightBtn.classList.contains('fa-sun-o')) {
-        document.querySelector('.main-style').href = 'assets/css/style_dark.css'
+        mainStyleTag.href = 'assets/css/light_mode_style.css'
         toggleDarkLightBtn.className = 'fa fa-moon-o darklight'
-        dark = 1
+        darkMode = 0
+        localStorage.setItem('darkMode', JSON.stringify(darkMode))
     } else {
-        document.querySelector('.main-style').href = 'assets/css/style.css'
+        mainStyleTag.href = 'assets/css/dark_mode_style.css'
         toggleDarkLightBtn.className = 'fa fa-sun-o darklight'
-        dark = 0
+        darkMode = 1
+        localStorage.setItem('darkMode', JSON.stringify(darkMode))
+
     }
 })
 
-
-window.addEventListener('scroll', () => {
-    navBar.classList.toggle('window-scroll', scrollY > 10)
-})
-
+// expand the faq's answer on click event of its corresponding icon
 document.querySelectorAll('.expand-question').forEach(element => {
     element.addEventListener('click', () => {
 
@@ -58,6 +75,8 @@ document.querySelectorAll('.expand-question').forEach(element => {
 
     })
 })
+
+// function to control show faq's answer
 
 function toggleShowFaqAnswer(crossmark) {
     // show the clicked question's answer
@@ -91,19 +110,24 @@ openMenuBtn.addEventListener('click', () => {
     }
 })
 
+// hide dropdown menu on scroll, and change the nav color properties
+
 window.addEventListener('scroll', () => {
     navMenu.classList.remove('open')
-
+    navBar.classList.toggle('window-scroll', scrollY > 10)
+    
     openMenuBtn.classList.add('open-menu')
     openMenuBtn.classList.remove('close-menu')
     openMenuBtn.children[0].className = 'fa fa-bars'
 })
 
+// adding event to userBtn to bring out the login page
 userBtn.addEventListener('click', () => {
     document.querySelector('.overlay').style.right = '0'
     loginFormContainer.style.right = '0'
 })
 
+// adding event to closeLoginFormBtn to push out the login page
 closeLoginFormBtn.addEventListener('click', () => {
     document.querySelector('.overlay').style.right = '-150%'
     loginFormContainer.style.right = '-150%'

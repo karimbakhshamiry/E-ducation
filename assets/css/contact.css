@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .contact-us__container aside.left img {
@@ -36,6 +36,7 @@
     font-size: .9rem;
     opacity: .8;
     margin-bottom: 1.5em;
+
 }
 
 .contact-us__container .contact-links {
@@ -52,11 +53,6 @@
 .contact-us__container a:hover {
     opacity: .8;
     text-decoration: underline;
-}
-
-
-.contact-us__container .social-media {
-    align-self: flex-start;
 }
 
 .contact-us__container .social-media a {
@@ -125,7 +121,6 @@ textarea {
     width: 98%;
     text-transform: none;
 }
-
 .contact-us__container .form-container form #send-message {
     display: inline-block;
     background-color: var(--color-danger);
