@@ -1,30 +1,7 @@
-:root {
-    --color-primary: #6c63ff;
-    --color-secondary:#F34F98;
-    --color-success: #00bf8e;
-    --color-warning: #f7c94b;
-    --color-danger: #f75842;
-    --color-danger-variant: rgba(247, 88, 66, 0.4);
-    --color-white: #fff;
-    --color-light: rgba(255, 255, 255, 0.7);
-    --color-black: #000;
-    --color-bg: #1f2641;
-    --color-bg1: #2e3267;
-    --color-bg2: #424890;
-
-    --container-width-lg: 76%;
-    --container-width-md: 90%;
-    --container-width-sm: 94%;
-
-    --trasition: all 400ms ease;
-    --shadow: 0 3rem 3rem rgba(0, 0, 0, .5);
-    --swiper-theme-color: #00bf8e;
-}
-
 .contact-us__container {
     display: grid;
     grid-template-columns: 1fr 5fr .5fr 8fr .5fr;
-    height: 35rem;
+    height: 50rem;
     margin-bottom: 5em;
     margin-top: 3vh;
 }
@@ -37,6 +14,12 @@
     border-radius: 2rem;
     z-index: 2;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, .5);
+    color: var(--color-black);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-us__container aside.left img {
@@ -63,22 +46,31 @@
     margin-bottom: 1em;
 }
 
+.contact-us__container .contact-links * {
+    color: var(--color-black);
+}
 .contact-us__container a:hover {
     opacity: .8;
     text-decoration: underline;
+}
+
+
+.contact-us__container .social-media {
+    align-self: flex-start;
 }
 
 .contact-us__container .social-media a {
     display: inline-block;
     margin-right: .5em;
     background-color: var(--color-bg1);
+    color: var(--color-white);
     font-size: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: .5em;
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     border-radius: 50%;
 }
 
@@ -123,7 +115,9 @@ textarea {
     width: 48%;
     text-transform: capitalize;
     background-color: var(--color-bg);
-    color: white;
+    color: var(--color-white);
+    font-size: 1rem;
+    font-family: sans-serif;
 }
 
 .contact-us__container .form-container form textarea,
@@ -149,10 +143,9 @@ textarea {
 }
 
 
-@media (max-width:1262px) {
+@media (max-width:1420px) {
     .contact-us .form-container form input[name='firstname'],
     .contact-us .form-container form input[name='lastname'] {
-        /* display: block; */
         width: 98%;
     }
 }

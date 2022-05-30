@@ -4,6 +4,25 @@ const navMenu = document.querySelector('.nav-menu')
 const loginFormContainer = document.querySelector('.login-container')
 const userBtn = document.getElementById('user-btn')
 const closeLoginFormBtn = document.getElementById('close-login-form')
+const toggleDarkLightBtn = document.querySelector('.darklight')
+const dark = toggleDarkLightBtn.classList.contains('fa-sun-o') ? 0 : 1
+
+if (dark) {
+    document.querySelector('.main-style').href = 'assets/css/style_dark.css'
+}
+
+toggleDarkLightBtn.addEventListener('click', () => {
+    if (toggleDarkLightBtn.classList.contains('fa-sun-o')) {
+        document.querySelector('.main-style').href = 'assets/css/style_dark.css'
+        toggleDarkLightBtn.className = 'fa fa-moon-o darklight'
+        dark = 1
+    } else {
+        document.querySelector('.main-style').href = 'assets/css/style.css'
+        toggleDarkLightBtn.className = 'fa fa-sun-o darklight'
+        dark = 0
+    }
+})
+
 
 window.addEventListener('scroll', () => {
     navBar.classList.toggle('window-scroll', scrollY > 10)
