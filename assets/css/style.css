@@ -214,7 +214,6 @@ img {
     background-color: var(--color-bg1);
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: top right;
     filter: blur(.5rem);
     position: fixed;
     top: 0;
@@ -826,6 +825,12 @@ img {
         margin: 0 1em;
     }
 
+
+    .overlay {
+        background-position: center;
+        background-size: auto;
+    }
+    
     .login-container {
         width: 90%;
         margin-right: 5%;
