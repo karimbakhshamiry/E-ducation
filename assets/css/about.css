@@ -31,7 +31,7 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
-.courses {
+.course {
     margin: 0;
 }
 
@@ -170,6 +170,7 @@
 
 .team__member .social-media a {
     padding: 0 .5em;
+    color: var(--color-white);
 }
 
 .team__member .social-media a:hover {
